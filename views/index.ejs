@@ -1,0 +1,29 @@
+<%- include('./partials/header.ejs')%>
+    <div class = "content">
+        <h3>Welcome to Computer Vision Api.</h3> 
+        <p>This is a place where you can analyze, dectect type, detect category, detect brand, detect color, detect faces, detect tags, <br>
+            Generate thumbnail, detect domain specific content and detect adult content from your image.</p>
+        <h4>Please select one option in the drop down box </h4>
+            <div class="select-box" style="width:200px;">
+                <form method="post" id="tableForm" action="/analyze">
+                <label for="cars">Choose an option :</label>
+                  <br>
+                  <select name="option" id="option">
+                  <option name="Analyze" value="Analyze">Analyze</option>
+                  <option name="DetectType" value="Detect Type">Detect Type</option>
+                  <option name="DetectCategory" value="Detect Category">Detect category</option>
+                  <option name="DetectBrand" value="Detect Brand">Detect brand</option>
+                  <option name="DetectColor" value="Detect Color">Detect Color</option>
+                  <option name="DetectObjects" value="Detect Objects">Detect Objects</option>
+                  <option name="DetectFaces" value="Detect Faces">Detect Faces</option>
+                  <option name="DetectAdultContent" value="Detect Adult Content">Detect Adult Content</option>
+                </select>
+                <br><br>
+                <label for="image">Please provide an image link here:</label>
+                <input type="text" id="image" name="image" class = "fixed-width" required>
+                <br><br>
+                <button type="submit" value="Submit">Submit</button>
+                </form>
+              </div>
+    </div>
+    <%- include('./partials/footer.ejs')%>

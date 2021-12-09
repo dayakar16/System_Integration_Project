@@ -1,0 +1,16 @@
+<%- include('./partials/header.ejs')%>
+    <div class = "content">
+         <%if(image){%>
+            <h3>Description of Image :</h3>
+            <div class="align">
+               <% if (!Array.isArray(response)) { %>
+                    <p><%= response %> </p>
+               <% } else {  %>
+                 <%   response.forEach(obj=>{ %>
+                         <p><%= obj %></p>
+                  <%  })} %>
+            </div>
+            <img src="<%=image%>" alt="ImageURL" width="700" height="350">
+         <%}%>
+    </div>
+    <%- include('./partials/footer.ejs')%>
