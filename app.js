@@ -8,8 +8,7 @@ const Routes = require('./Router/Router.js');
 const app = express();
 
 //configure app
-let port = 4000;
-let host = 'localhost';
+let port = 3000;
 app.set('view engine', 'ejs');
 
 
@@ -39,6 +38,6 @@ app.use((err, req, res, next)=>{
     res.render('error', {error: err});
 });
 
-app.listen(port, host, ()=>{
+app.listen(port, ()=>{
     console.log('Server is running on port', port);
 });
