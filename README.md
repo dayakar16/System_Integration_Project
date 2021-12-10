@@ -44,7 +44,7 @@ Options are:
 
 ## High level Architecture: 
 
-<img src="./public/images/FlowDiagram.png" alt="Flow Diagram" width=400 height= 500>
+<img src="./public/images/FlowDiagram.png" alt="Flow Diagram">
 
 ## Code Flow: 
 1. All router will be handled by router which are re rerouted to the controller. 
@@ -68,21 +68,21 @@ In this project all errors are handled using middlewares and all errors are cate
 
 Using Website: 
 
-<img src="./public/images/input.png" alt="Image" width="400" height="400">
+<img src="./public/images/input.png" alt="Image">
 
 ## Using Postman: 
 
-<img src='./public/images/input_postman.png' alt="Postman Input" width="400" height="400"> 
+<img src='./public/images/input_postman.png' alt="Postman Input"> 
 
 ## Sample Output: 
 
-<img src='./public/images/output.png' alt="output" width="400" height="400"> 
+<img src='./public/images/output.png' alt="output"> 
 
 ## Response for Detect Color option:
 
 {"message":["Image is in black and white","Dominant colors: Black, Grey, White","Dominant foreground color: Grey","Dominant background color: Black","Suggested accent color: #666666"]}
 
-## Sample Image Urls and options for use: 
+## Sample Image Urls for use: 
 
 we can use the below url for all options but for some like brands it gives response as "No brands detected".
 
