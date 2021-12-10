@@ -3,8 +3,8 @@ I have developed a simple web app for computer vision API which uses the Azure C
 
 ## Execution: 
 1. Download, Unzip and open in editor
-2. open terminal run "npm install" command
-3. run the server using "node app.js" command 
+2. open terminal run <b>"npm install"</b> command
+3. run the server using <b>"node app.js"</b> command 
 
 ##### Download: 
 Download the git repository using either by direct download as zip or by using "git clone https://github.com/dayakar16/System_Integration_Project.git" command 
@@ -50,8 +50,8 @@ Options are:
 1. All router will be handled by router which are re rerouted to the controller. 
 2. Controller will decide what to with the requests, it is the only one to communicate with the model to analyze the image and take back the response. This response is later showed in the ejs from the controller. 
 
-Get -> router.get -> controller.index -> index Page 
-Post -> router.post -> controller.show ->  computerVision(image,val) in model -> analyze image and returns response to controller.show -> user.
+1. Get -> router.get -> controller.index -> index Page 
+2. Post -> router.post -> controller.show ->  computerVision(image,val) in model -> analyze image and returns response to controller.show -> user.
 
 ## Status Codes used in this project: 
 
